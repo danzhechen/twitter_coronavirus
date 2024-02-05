@@ -6,6 +6,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--input_path',required=True)
 parser.add_argument('--key',required=True)
 parser.add_argument('--percent',action='store_true')
+parser.add_argument('--graph_number', type=int, required=True)
 args = parser.parse_args()
 
 # imports
@@ -25,8 +26,9 @@ if args.percent:
     for k in counts[args.key]:
         counts[args.key][k] /= counts['_all'][k]
 
-# print the count values
+# sort the count values and select the top 10 keys
 items = sorted(counts[args.key].items(), key=lambda item: (item[1],item[0]), reverse=True)
+<<<<<<< HEAD
 
 top_items = items[:10]
 top_items_sorted = sorted(top_items, key=lambda item:(item[1],item[0]))
@@ -43,3 +45,4 @@ plt.title('Top 10 Countries by Tweet Counts')
 plt.tight_layout()
 
 plt.savefig('reduced_bargraph.png')
+=======

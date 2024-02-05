@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/usr/bin/env python3 
 # command line args
 import argparse
@@ -73,3 +74,4 @@ plt.tight_layout()
 
 plt.savefig(args.plot_path, format='png')
 plt.close()
+=======
