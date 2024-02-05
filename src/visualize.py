@@ -11,6 +11,9 @@ args = parser.parse_args()
 # imports
 import os
 import json
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
 from collections import Counter,defaultdict
 
 # open the input path
@@ -24,5 +27,19 @@ if args.percent:
 
 # print the count values
 items = sorted(counts[args.key].items(), key=lambda item: (item[1],item[0]), reverse=True)
-for k,v in items:
-    print(k,':',v)
+
+top_items = items[:10]
+top_items_sorted = sorted(top_items, key=lambda item:(item[1],item[0]))
+
+
+# Create a bar graph
+plt.figure(figsize=(10, 6))
+for key,value in top_items_sorted:
+    plt.bar(key, value, color='skyblue')
+plt.xlabel('Country Codes')
+plt.ylabel('Tweet Counts')
+plt.xticks(rotation='vertical')
+plt.title('Top 10 Countries by Tweet Counts')
+plt.tight_layout()
+
+plt.savefig('reduced_bargraph.png')
