@@ -22,24 +22,25 @@ The project was following the MapReduce procedure to analyze these tweets, which
 
 ## Results
 
-Five PNG files were generated as a part of this analysis. First four plots represented how language and country will contribute to the usage of certain hashtags. The last plot represented the usage trends of different hashtags related to the coronavirus pandemic. These visualizations offer an intuitive understanding of how discussions evolved on Twitter over specific periods.
+Six PNG files were generated as a part of this analysis. First four plots represented how language and country was distributed by focusing on the usage of certain hashtags. The last two plots represented the comparison and contrast regarding the usage trends of different hashtags related to the coronavirus pandemic. These visualizations offer an intuitive understanding of how discussions evolved on Twitter over specific periods.
 
 *Example Plots:*
 
-### Plot 1
+### Use of the tag #coronavirus in 2020 by language
 ![Plot 1](https://github.com/danzhechen/twitter_coronavirus/blob/master/plots/reduced_bargraph_1.png)
 
-### Plot 2
+### Use of the tag #coronavirus in 2020 by country 
 ![Plot 2](https://github.com/danzhechen/twitter_coronavirus/blob/master/plots/reduced_bargraph_2.png)
 
-### Plot 3
+### Use of the tag #코로나바이러 in 2020 by Language
 ![Plot 3](https://github.com/danzhechen/twitter_coronavirus/blob/master/plots/reduced_bargraph_3.png)
 
-### Plot 4
+### Use of the tag #코로나바이러 in 2020 by Language
 ![Plot 4](https://github.com/danzhechen/twitter_coronavirus/blob/master/plots/reduced_bargraph_4.png)
 
-### Plot 5
-![Plot 5](https://github.com/danzhechen/twitter_coronavirus/blob/master/plots/hashtag_trends.png)
+### Use of the tags #coronavirus and #corona in 2020
+![Plot 5](https://github.com/danzhechen/twitter_coronavirus/blob/master/plots/hashtags_plot_1.png)
 
-
+### Use of the tags #coronavirus and #corona in 2020
+![Plot 6](https://github.com/danzhechen/twitter_coronavirus/blob/master/plots/hashtags_plot_2.png)
 
