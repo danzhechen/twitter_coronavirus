@@ -28,7 +28,6 @@ if args.percent:
 
 # sort the count values and select the top 10 keys
 items = sorted(counts[args.key].items(), key=lambda item: (item[1],item[0]), reverse=True)
-<<<<<<< HEAD
 
 top_items = items[:10]
 top_items_sorted = sorted(top_items, key=lambda item:(item[1],item[0]))
@@ -45,4 +44,3 @@ plt.title('Top 10 Countries by Tweet Counts')
 plt.tight_layout()
 
 plt.savefig('reduced_bargraph.png')
-=======
